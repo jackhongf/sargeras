@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vincent.hong.repositories.dao.CustomerDao" >
+  <resultMap id="BaseResultMap" type="com.vincent.hong.entity.dto.Customer" >
+    <result column="CUS_CODE" property="cusCode" jdbcType="VARCHAR" />
+    <result column="CUS_NAME" property="cusName" jdbcType="VARCHAR" />
+    <result column="PASSWORD" property="password" jdbcType="VARCHAR" />
+    <result column="NICKNAME" property="nickname" jdbcType="VARCHAR" />
+    <result column="IDN" property="idn" jdbcType="VARCHAR" />
+    <result column="STATUS" property="status" jdbcType="VARCHAR" />
+    <result column="MPHONE" property="mphone" jdbcType="VARCHAR" />
+    <result column="ADDR" property="addr" jdbcType="VARCHAR" />
+    <result column="EMAIL" property="email" jdbcType="VARCHAR" />
+    <result column="CREATE_DT" property="createDt" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    CUS_CODE, CUS_NAME, PASSWORD, NICKNAME, IDN, STATUS, MPHONE, ADDR,
+    EMAIL, CREATE_DT, MPHONE, EMAIL, CREATE_DT
+  </sql>
+
+  
+  <select id="selectAllCustomer" resultMap="BaseResultMap" parameterType="java.util.Map">
+  	 select <include refid="Base_Column_List" />
+  	 from CUSTOMER
+    where 1=1
+    <if test="cusCode !=null and cusCode != ''">
+      and CUS_CODE = #{cusCode,jdbcType=VARCHAR}
+    </if>
+    <if test="cusName !=null and cusName != ''">
+      and CUS_NAME LIKE  '%'|| #{cusName,jdbcType=VARCHAR}||'%'
+    </if>
+    <if test="mphone !=null and mphone != ''">
+      and MPHONE = #{mphone,jdbcType=VARCHAR}
+    </if>
+  </select>
+</mapper>
