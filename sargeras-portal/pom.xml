@@ -26,54 +26,54 @@
 			<artifactId>sargeras-common</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-			<!-- 此处为了排除spring boot 自带的tomcat，以便用外置web容器  -->
-			<!--<exclusions>-->
-			<!--<exclusion>-->
+		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-			<!--</exclusion>-->
-			<!--</exclusions>-->
-		</dependency>
+			<!--<artifactId>spring-boot-starter</artifactId>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-web</artifactId>-->
+			<!--&lt;!&ndash; 此处为了排除spring boot 自带的tomcat，以便用外置web容器  &ndash;&gt;-->
+			<!--&lt;!&ndash;<exclusions>&ndash;&gt;-->
+			<!--&lt;!&ndash;<exclusion>&ndash;&gt;-->
+			<!--&lt;!&ndash;<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
+			<!--&lt;!&ndash;<artifactId>spring-boot-starter-tomcat</artifactId>&ndash;&gt;-->
+			<!--&lt;!&ndash;</exclusion>&ndash;&gt;-->
+			<!--&lt;!&ndash;</exclusions>&ndash;&gt;-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.google.guava</groupId>-->
+			<!--<artifactId>guava</artifactId>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.mybatis.spring.boot</groupId>-->
+			<!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
+		<!--</dependency>-->
 
-		<dependency>
-		<groupId>org.apache.commons</groupId>
-		<artifactId>commons-lang3</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-test</artifactId>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+		<!--<groupId>org.apache.commons</groupId>-->
+		<!--<artifactId>commons-lang3</artifactId>-->
+		<!--</dependency>-->
 
 		<!-- 阿里巴巴数据库连接池 -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid-spring-boot-starter</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.alibaba</groupId>-->
+			<!--<artifactId>druid-spring-boot-starter</artifactId>-->
+		<!--</dependency>-->
 
 	</dependencies>
 
