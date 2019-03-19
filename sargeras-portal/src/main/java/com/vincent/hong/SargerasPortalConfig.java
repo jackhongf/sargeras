@@ -26,6 +26,6 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 @Configuration
 @MapperScan(basePackages ="com.vincent.hong.repositories.dao")
-public class CommonBootConfig {
+public class SargerasPortalConfig {
 
 }

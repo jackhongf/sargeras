@@ -11,15 +11,11 @@
 package com.vincent.hong.repositories;
 
 
-import com.vincent.hong.CommonBootConfig;
 import com.vincent.hong.entity.dto.Customer;
 import com.vincent.hong.repositories.dao.CustomerDao;
 import com.vincent.hong.repositories.jpa.CustomerRepository;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
 import java.util.List;
@@ -33,8 +29,8 @@ import java.util.Map;
  * @date: 2019/3/16 0:51
  * @since 1.0.0
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = CommonBootConfig.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = CommonBootConfig.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class CustomerRepositoryTest {
 
     @Autowired

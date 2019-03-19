@@ -10,11 +10,8 @@
 	</parent>
 	
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.vincent.hong</groupId>
 	<artifactId>sargeras-openapi</artifactId>
-
-
-	<name>sargeras-openapi</name>
+	<name>Sargeras Open Api</name>
 	<description>sargeras-openapi  for outside api</description>
 
 	<properties>
@@ -32,7 +29,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -75,13 +71,11 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>1.1.6</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.39</version>
 		</dependency>
 
 
@@ -89,19 +83,11 @@
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
-			<version>1.4.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>23.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
 		</dependency>
 
 	</dependencies>

@@ -24,6 +24,6 @@ import java.util.List;
  * @date: 2019/3/16 0:09
  * @since 1.0.0
  */
-public interface CustomerRepository extends JpaRepository<Customer,Integer> {
+public interface Customer1Repository extends JpaRepository<Customer,Integer> {
     public List<Customer> findAll();
 }
