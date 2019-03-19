@@ -11,7 +11,6 @@
 package com.vincent.hong.lambda;
 
 
-import com.vincent.hong.entity.dto.Customer;
 import org.junit.Test;
 
 import java.io.File;
@@ -19,8 +18,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -61,10 +58,8 @@ public class TestCase {
 
     @Test
     public void testCollections(){
-        List<Customer> lsit =  new ArrayList<>();
-        makeList(lsit);
 //        lsit.stream().forEach((Customers cust)->{cust.setId(cust.getId()+cust.getId());});
-        System.out.println(lsit.toString());
+//        System.out.println(lsit.toString());
 
 
     }
@@ -84,12 +79,6 @@ public class TestCase {
     }
 
 
-    private void makeList(List<Customer> lsit){
-        for(int i=0;i<10; i++){
-            Customer cust = new Customer();
-            lsit.add(cust);
-        }
-    }
 
 
 

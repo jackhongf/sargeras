@@ -12,9 +12,6 @@ package com.vincent.hong.repositories;
 
 
 import com.vincent.hong.CommonBootConfig;
-import com.vincent.hong.entity.dto.Customer;
-import com.vincent.hong.repositories.dao.CustomerDao;
-import com.vincent.hong.repositories.jpa.CustomerRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
