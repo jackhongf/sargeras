@@ -6,6 +6,15 @@ public class User {
     private int age;
     private String address;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
