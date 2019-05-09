@@ -42,13 +42,13 @@ public class TestBatchJob extends  AbstractBaseJobService<User> {
 
              if (age%10 ==0){
                  pendingNum.getAndIncrement();
-                 System.out.println(threadName+"["+threadId+"] pendingNum"+ pendingNum.intValue());
+                 System.out.println(threadName+" time: "+ String.valueOf(System.nanoTime())+" ["+threadId+"] pendingNum"+ pendingNum.intValue());
              }else if (age%3 ==0){
                  failNum.getAndIncrement();
-                 System.out.println(threadName+"["+threadId+"] failNum"+ failNum.intValue());
+                 System.out.println(threadName+" time: "+ String.valueOf(System.nanoTime())+" ["+threadId+"] failNum"+ failNum.intValue());
              }else{
                  successNum.getAndIncrement();
-                 System.out.println(threadName+"["+threadId+"] successNum"+ successNum.intValue());
+                 System.out.println(threadName+" time: "+ String.valueOf(System.nanoTime())+" ["+threadId+"] successNum"+ successNum.intValue());
 
              }
         }
